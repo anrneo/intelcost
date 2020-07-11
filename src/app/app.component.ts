@@ -48,8 +48,12 @@ searchCategories(cate){
   .subscribe(dat=>{
     this.images = dat
   })
+}
 
-  
+filtrarImagesEnter(event){
+  if(event.keyCode==13){
+    this.filtrarImages(event.target.value)
+  }
 }
 
 }

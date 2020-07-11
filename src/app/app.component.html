@@ -344,7 +344,7 @@
       <div class="col-sm-6">
         <form class="form-inline"  #registerForm="ngForm">
           <label for="search" class="mr-sm-2">Filtrar:</label>
-          <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Filtrar" id="filtar" [(ngModel)]="model.search" name="filtar" width="80%">
+          <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Filtrar" id="filtar" [(ngModel)]="model.search" name="filtar" width="80%" (keyup)="filtrarImagesEnter($event)">
           <button type="button" class="btn btn-primary" (click)="filtrarImages(model.search)"><i class="fas fa-search"></i></button>
         </form> 
       </div>
